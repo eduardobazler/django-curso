@@ -1,6 +1,7 @@
 # django-curso
 Repositório para estudar principais ferramentas e métodos do Django
 
+[link da aplicação](https://djangobazler.herokuapp.com/)
 
 [![Build Status](https://travis-ci.com/eduardobazler/django-curso.svg?branch=main)](https://travis-ci.com/eduardobazler/django-curso)
 
