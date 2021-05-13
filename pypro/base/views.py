@@ -1,7 +1,7 @@
-from django.shortcuts import render # noqa
-from django.http.response import HttpResponse
+from django.shortcuts import render
+from django.http.response import HttpResponse # noqa
 # Create your views here.
 
 
 def home(request):
-    return HttpResponse('<html><body>Olá Django, Eduardo Bazler!</body></html>', content_type='text/html')
+    return render(request, 'base/home.html')
