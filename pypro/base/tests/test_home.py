@@ -15,9 +15,14 @@ def test_status_code(resp):
     assert resp.status_code == 200
 
 
+
 def test_title(resp):
     assert_contains(resp, '<title>Eduardo Bazler - home</title>')
 
 
 def test_home_link(resp):
     assert_contains(resp, f'href="{reverse("base:home")}">Eduardo Bazler</a>')
+
+
+def test_email_link(resp):
+    assert_contains(resp, f'href="mailto:eduardo.bazler@unesp.br"')

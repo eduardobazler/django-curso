@@ -37,26 +37,7 @@
 
 {% block body %} {% endblock body %}
 
+{% include 'base/footer.html' with contato_email='eduardo.bazler@unesp.br' only %}
 
-
-<footer class="main-footer mt-5 pt-4 text-white">
-    <div class="container">
-        <div class="col">
-            <h3>Entre em contato</h3>
-            <address>
-                +55 12 98887-1738
-                <br/>
-                <a href="mailto:eduardo.bazler@unesp.br">eduardo.bazler@unesp.br</a>
-            </address>
-        </div>
-    </div>
-    <div class="rights pb-2">
-        <div class="container">
-            <div class="col">
-                {% now 'Y' %} Eduardo Bazler.
-            </div>
-        </div>
-    </div>
-</footer>
   </body>
 </html>
