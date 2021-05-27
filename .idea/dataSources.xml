@@ -8,7 +8,7 @@
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db.sqlite3</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="postgres@localhost" uuid="834e29a2-2ddb-45d5-baee-d7df76746e6b">
+    <data-source source="LOCAL" name="postgres@localhost" uuid="bcbe8b52-f7f7-4a6e-8c27-359b312e8bb5">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
