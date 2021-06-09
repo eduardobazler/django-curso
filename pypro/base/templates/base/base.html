@@ -25,6 +25,7 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
+
         </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -43,6 +44,25 @@
             </div>
           </li>
         </ul>
+      {% if user.is_authenticated %}
+          <ul class="navbar-nav ">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarCohorts" role="button" data-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false">
+                {{ user.first_name }}
+            </a>
+            <div class="dropdown-menu border-light" aria-labelledby="navbarCohorts">
+                <div class="dropdown-item">
+                    <a class="btn btn-danger" href="{% url 'logout' %}">Sair</a>
+                </div>
+            </div>
+          </li>
+        </ul>
+
+      {% else %}
+      <a class="btn btn-light my-2" href="{% url 'login' %}">Entrar</a>
+      {% endif %}
 
       </div>
     </nav>
